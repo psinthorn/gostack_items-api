@@ -10,6 +10,7 @@ type itemsService struct{}
 type itemsServiceInterface interface {
 	Create(items.Item) (*items.Item, error)
 	Get(items.Item) (*items.Item, error)
+	GetByID(int) *items.Item
 }
 
 func (i *itemsService) Create(item items.Items) (*items.Item, error) {}
